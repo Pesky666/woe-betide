@@ -1,4 +1,5 @@
 name: Deploy WOE BETIDE to GitHub Pages
+# deploy-trigger: 2026-09-22-b
 on:
   push:
     branches: [main]
