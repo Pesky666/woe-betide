@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "season_1_equal_night",
+  "title": "Season 1: The Festival of Equal Night",
+  "startDate": "2026-08-27",
+  "endDate": "2026-09-23",
+  "lengthDays": 28,
+  "finale": "The Autumn Equinox",
+  "missedDayRule": "Calendar days unlock content; they never expire it. Returning players receive the oldest unfinished festival lead first, and the finale remains playable after Day 28.",
+  "weeks": [
+    {"week": 1, "days": "1–7", "title": "The Counting", "worldChange": "Chalk numbers, counting desks and official labels appear."},
+    {"week": 2, "days": "8–14", "title": "The Hanging", "worldChange": "Lanterns, banners, stalls and the dress code appear."},
+    {"week": 3, "days": "15–21", "title": "The Rehearsal", "worldChange": "NPCs gather at the field and the empty scales are revealed."},
+    {"week": 4, "days": "22–28", "title": "The Equal Night", "worldChange": "The cast converges and unresolved preparations become catch-up leads."}
+  ],
+  "calendar": [
+    "Counting begins", "Chair Seven is missing", "Castle doors counted as livestock", "Moon census attempted", "Chalk shortage", "First count disputed", "Week-one tally",
+    "Lantern hanging", "Dress code proclaimed", "Decorative onion ruling", "Bramble refuses lunch", "Festival stalls open", "Golden Potato displayed", "Golden Potato vanishes",
+    "First rehearsal", "Night weighs nothing", "Turnip grave identified", "Black Turnip recovered", "Turnip validity hearing", "Bell rehearsal fails", "Scales declared unbalanced",
+    "Chair Seven reports asylum claim", "False potato exposed", "Tax Weasel names its price", "Keith searches the records", "Golden Potato recovered", "Equal Night procession", "Autumn Equinox finale"
+  ],
+  "questChains": [
+    {"id":"missing_seventh_chair","week":1,"stages":3}, {"id":"castle_livestock_census","week":1,"stages":3},
+    {"id":"count_the_moon","week":1,"stages":3}, {"id":"great_chalk_shortage","week":1,"stages":2},
+    {"id":"celebrity_cloakroom_crisis","week":2,"stages":4}, {"id":"lantern_licence","week":2,"stages":3},
+    {"id":"golden_potato_disappearance","week":2,"stages":4}, {"id":"turnip_of_unusual_darkness","week":3,"stages":4},
+    {"id":"rehearsal_bell","week":3,"stages":3}, {"id":"scales_imbalance","week":3,"stages":3},
+    {"id":"potato_claimant","week":4,"stages":5}, {"id":"equal_night_finale","week":4,"stages":5}
+  ],
+  "smallIncidents": [
+    "Counted twice", "Unlicensed chalk", "Door migration", "Chair promotion", "Lantern envy", "Onion inspection", "Banner upside down", "Stall boundary dispute",
+    "Premature bell", "Rehearsal understudy", "Turnip witness", "Scale calibration", "Procession obstruction", "Soup substitution", "Sunset rescheduling", "Shadow without owner"
+  ],
+  "production": {
+    "questStages": 42,
+    "stageCopy": ["offer", "objective", "location hint", "reminder", "completion", "world consequence"],
+    "mapStates": ["counting labels", "lanterns and stalls", "rehearsal field", "equinox procession"],
+    "finaleOutcomes": ["perfectly balanced", "too much day", "too much night", "soup substituted"],
+    "audioCues": ["chalk count", "lantern light", "rehearsal bell", "crowd murmur", "scales settle", "equinox fanfare"],
+    "uiStates": ["season day and week", "new festival lead", "catch-up lead", "continuing chain", "finale available", "season complete"],
+    "rewardSets": 12
+  },
+  "assets": {
+    "npcs": [
+      {"id":"rat","name":"The Rat King","existing":true}, {"id":"bramble","name":"Bramble, Paranormal Repairman","existing":true},
+      {"id":"derek","name":"Derek the Worm","existing":true}, {"id":"moon","name":"The Moon","existing":true},
+      {"id":"keith","name":"Keith, Caretaker","existing":true}, {"id":"mushroom","name":"Suspicious Mushroom","existing":true},
+      {"id":"clerk","name":"Tollbooth Clerk","existing":true}, {"id":"juniper","name":"Juniper, Apprentice Ranger"},
+      {"id":"gravedigger","name":"The Gravedigger"}, {"id":"mole_prophet","name":"The Mole Prophet"},
+      {"id":"tax_weasel","name":"The Tax Weasel"}, {"id":"onion_merchant","name":"Decorative Onion Merchant"},
+      {"id":"lantern_reeve","name":"The Lantern Reeve"}, {"id":"potato_custodian","name":"Potato Custodian"},
+      {"id":"bell_ringer","name":"The Bell Ringer"}, {"id":"hedge_witch","name":"Hedge Witch"},
+      {"id":"soup_oracle","name":"The Soup Oracle"}, {"id":"bridge_troll","name":"Bridge Troll"},
+      {"id":"scarecrow_advocate","name":"Scarecrow Advocate"}, {"id":"eel_bailiff","name":"Eel Bailiff"},
+      {"id":"turnip_widow","name":"The Turnip Widow"}, {"id":"weather_clerk","name":"Weather Clerk"},
+      {"id":"goat_archivist","name":"Goat Archivist"}, {"id":"dusk_herald","name":"Herald of Dusk"},
+      {"id":"dawn_herald","name":"Herald of Dawn"}
+    ],
+    "enemies": [
+      {"id":"sir_parsnip","name":"Sir Parsnip"}, {"id":"metric_wraith","name":"Metric Wraith"},
+      {"id":"velvet_moth","name":"Marlon the Velvet Moth"}, {"id":"tally_ghost","name":"Tally Ghost"},
+      {"id":"lantern_mimic","name":"Lantern Mimic"}, {"id":"counterfeit_vegetable","name":"Counterfeit Vegetable"}
+    ],
+    "props": [
+      {"id":"golden_day_potato","name":"Golden Day Potato"}, {"id":"black_moon_turnip","name":"Black Moon Turnip"},
+      {"id":"equal_scales","name":"Ceremonial Scales"}, {"id":"numbered_chair","name":"Numbered Chair"},
+      {"id":"counting_desk","name":"Counting Desk"}, {"id":"festival_lantern","name":"Festival Lantern"},
+      {"id":"festival_banner","name":"Festival Banner"}, {"id":"festival_stall","name":"Festival Stall"},
+      {"id":"dress_onion","name":"Decorative Onion"}, {"id":"tax_ledger","name":"Royal Tax Ledger"},
+      {"id":"ceremonial_spoon","name":"Ceremonial Spoon"}, {"id":"soup_cauldron","name":"Soup Cauldron"}
+    ],
+    "tiles": [
+      {"id":"chalk_number","name":"Chalk Number"}, {"id":"lantern_post","name":"Lantern Post"},
+      {"id":"procession_rope","name":"Procession Rope"}, {"id":"festival_gate","name":"Festival Gate"},
+      {"id":"scale_dais","name":"Scale Dais"}, {"id":"turnip_grave","name":"Turnip Grave"}
+    ]
+  }
+}
